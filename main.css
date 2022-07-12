@@ -3,15 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 /*font-family:  Poiret One;*/
 :root{
-  --background-color: #202021; 
-  --nav-bar: #72efdd;
-  --nav-shadow: #FFA1CE;
+  --color1: #ffffff; 
+  --color2: #202021;
+  --color3: #84a59d;
 }
 body{
-  background: var(--background-color, white); 
+  background: var(--color1); 
 }
 nav{
-            background: var(--background-color); 
+            background: var(--color1); 
             position: fixed;
             top: 0;
             left: 0;
@@ -20,10 +20,10 @@ nav{
             z-index: 1; 
             text-align: center;
             margin: 0 auto;
-            border-bottom: solid 2px var(--nav-bar);
+            border-bottom: solid 2px var(--color2);
  }
 .nav-links a {
-            color: var(--nav-bar);
+            color: var(--color2);
             font-weight: 100;
             letter-spacing: 1px;
             text-transform: uppercase;
@@ -37,8 +37,8 @@ nav{
             z-index: 1;
  }
 .nav-links a:hover {
-            color: var(--background-color);
-            background: var(--nav-bar);
+            color: var(--color1);
+            background: var(--color2);
             font-weight: bold;
 }
 .nav-links a:hover:after {
@@ -75,7 +75,7 @@ nav{
         right: 0px;
         height: 92vh;
         top: 7vh;
-        background-color: var(--nav-bar);
+        background-color: var(--color2);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -140,7 +140,7 @@ nav{
   top: 6vh;
 }
 .text-typing{
-  color: var(--nav-bar);
+  color: var(--color1); 
 }
 .text-typing h2 {
   margin:0px;
@@ -162,7 +162,7 @@ nav{
     border-right:2px solid transparent;
   }
   50% {
-    border-right:2px solid var(--nav-bar);
+    border-right:2px solid var(--color2);
   }
 }
 .line2{
@@ -171,20 +171,20 @@ nav{
   font-size: 18px;
   /*text-shadow: 2px 2px 8px #5E6682;*/
   line-height: 100%;
-  color: var(--nav-shadow) !important;
+  color: var(--color3) !important;
   margin-top: 40px;
 }
 .section{
-  background: var(--nav-bar);
+  background: var(--color2);
   padding-top: 1em;
   text-align: center;
-  color: var(--background-color);
+  color: var(--color1);
   font-size: 1.3em;
   padding-bottom: 5em;
   margin: 40px -10px;
 }
 .title{
-  color: var(--background-color);
+  color: var(--color1);
   font-family: Poiret One;
   font-size: 2.5em;
   text-align: center;
@@ -198,7 +198,7 @@ nav{
   font-family: 'Poppins', sans-serif;
 }
 #projectTitle{
-  color: var(--nav-bar);
+  color: var(--color2);
   font-family:  Poiret One;
   font-size: 2.5em;
   text-align: center;
@@ -269,7 +269,7 @@ nav{
 }
 
 .project {
-  background: var(--nav-bar);
+  background: var(--color1);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   border-radius: 3px;
   border-style: hidden; 
@@ -279,7 +279,7 @@ nav{
   font-size: 25px;
   text-align: center;
   padding: .3em;
-  color: var(--background-color);
+  color: var(--color1);
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
@@ -302,15 +302,15 @@ nav{
 }*/
 
 .project:hover {
-  color: var(--nav-bar);
+  color: var(--color2);
   transition: color 0.3s ease-out;
-  background: var(--background-color);
-  box-shadow: 0px 0px 10px var(--nav-shadow);
+  background: var(--color1);
+  box-shadow: 0px 0px 10px var(--color3);
 }
 footer{
   font-family: 'Poppins', sans-serif;
-  color: var(--nav-shadow); 
-  border-top: solid 2px var(--nav-bar);
+  color: var(--color3); 
+  border-top: solid 2px var(--color2);
   margin: 0 auto;
 }
 footer li{
@@ -322,7 +322,7 @@ footer li{
 }
 footer li a{
    font-family: 'Poppins', sans-serif;
-   color: var(--nav-shadow); 
+   color: var(--color3); 
    text-decoration: none;
 }
 footer li:hover{
